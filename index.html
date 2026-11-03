@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- ====================================================================
+       ATENÇÃO ESTUDANTES: 
+       Ajuste a tag <title> e a <meta description> para o nome do seu setor.
+       Exemplo: "Achados e Perdidos — InfoHub FAMINAS"
+       ==================================================================== -->
+  <title>Carteirinha Estudantil — InfoHub FAMINAS</title>
+  <meta name="description"
+    content="Guia de autoatendimento sobre emissão, segunda via, foto, prazos e retirada da carteirinha estudantil da FAMINAS." />
+
+  <link rel="icon" type="image/png" href="./assets/images/logo-faminas.png" />
+
+  <!-- Google Fonts & Material Symbols Oficiais FAMINAS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Red+Hat+Display:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    rel="stylesheet" />
+
+  <!-- Folhas de Estilo Institucionais (NÃO ALTERAR) -->
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+  <link rel="stylesheet" href="./css/modais.css" />
+
+  <!-- Folha de Estilo Customizada dos Estudantes (LIVRE PARA EDIÇÃO) -->
+  <link rel="stylesheet" href="./css/custom.css" />
+</head>
+
+<body>
+  <!-- ====================================================================
+       CABEÇALHO INSTITUCIONAL OFICIAL (NÃO ALTERAR)
+       O botão de ação direciona o discente de volta ao InfoHub principal.
+       ==================================================================== -->
+  <header id="main-header" class="site-header">
+    <div class="header-container container">
+      <div class="brand-wrapper">
+        <a href="https://infohub-faminas.vercel.app" class="brand-link" aria-label="InfoHub FAMINAS - Página Inicial">
+          <img src="./assets/images/logo-faminas.png" alt="Logomarca Oficial FAMINAS" class="brand-logo" />
+        </a>
+        <div class="brand-divider" aria-hidden="true"></div>
+        <div class="brand-meta">
+          <span class="brand-title">InfoHub FAMINAS</span>
+          <span class="brand-subtitle">Extensão Acadêmica • ADS</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Botão oficial de retorno ao Hub Principal -->
+        <a 
+          href="https://infohub-faminas.vercel.app" 
+          class="btn btn-primary-highlight btn-portal" 
+          id="link-retornar-hub"
+          aria-label="Retornar à página inicial do InfoHub FAMINAS"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
+          <span>Retornar ao InfoHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Área Principal da Solução Setorial -->
+  <main id="main-content">
+    <!-- ====================================================================
+         SEÇÃO HERO INSTITUCIONAL
+         ESTUDANTES: Ajuste APENAS o Título do Setor e a Descrição do Setor.
+         As tags institucionais e badges não devem ser removidas.
+         ==================================================================== -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+      <div class="hero-content container">
+        <div class="hero-tag">
+          <span class="material-symbols-outlined" aria-hidden="true">school</span>
+          Engenharia de Software • ADS FAMINAS
+        </div>
+
+        <!-- [EDITÁVEL]: Nome do Setor -->
+        <h1 id="hero-heading" class="hero-title">
+          Carteirinha <span>Estudantil</span>
+        </h1>
+
+        <!-- [EDITÁVEL]: Descrição e Propósito do Setor apurados na entrevista -->
+        <p class="hero-description">
+          Encontre orientações reunidas pela equipe sobre a primeira via, segunda via, padrão da foto e retirada da carteirinha. Quando uma informação ainda não tem confirmação, indicamos que você consulte a Central de Atendimento ao Aluno (CAA).
+        </p>
+
+        <div class="hero-badges-group" aria-label="Informações do autoatendimento">
+          <div class="hero-badge-item">
+            <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+            <span>Processos Homologados</span>
+          </div>
+          <div class="hero-badge-item">
+            <span class="material-symbols-outlined" aria-hidden="true">support_agent</span>
+            <span>Autoatendimento Discente</span>
+          </div>
+          <div class="hero-badge-item">
+            <span class="material-symbols-outlined" aria-hidden="true">schedule</span>
+            <span>Disponível 24/7</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         ÁREA CENTRAL LIVRE PARA OS ESTUDANTES (FEATURES DO SETOR)
+         Vocês têm total liberdade para estruturar esta área central conforme
+         os requisitos, fluxos e necessidades identificados nas entrevistas.
+         
+         REQUISITO: Utilize HTML5 semântico (section, article, div, ul, details).
+         Para criar estilos novos, edite o arquivo "css/custom.css".
+         ==================================================================== -->
+    <section id="features" class="sector-content-section" aria-labelledby="sector-content-heading">
+      <div class="container">
+        <div class="sector-section-header">
+          <div class="sector-section-tag">
+            <span class="material-symbols-outlined" aria-hidden="true">badge</span>
+            <span>Guia da Carteirinha</span>
+          </div>
+          <h2 id="sector-content-heading" class="sector-section-title">Resolva suas dúvidas antes de ir à CAA</h2>
+          <p class="sector-section-subtitle">Reunimos em um só lugar o que os alunos mais perguntam sobre a carteirinha: como ela é emitida, o que fazer em caso de perda, como preparar a foto, quanto tempo esperar e onde retirar. O conteúdo foi montado a partir de entrevistas com 12 estudantes de diferentes cursos e de informações complementares levantadas pelo Grupo 10.</p>
+        </div>
+
+        <nav class="quick-nav" aria-label="Atalhos desta página">
+          <a href="#passo-a-passo"><span class="material-symbols-outlined" aria-hidden="true">route</span>Passo a passo</a>
+          <a href="#foto"><span class="material-symbols-outlined" aria-hidden="true">photo_camera</span>Foto</a>
+          <a href="#prazos"><span class="material-symbols-outlined" aria-hidden="true">payments</span>Valores e prazos</a>
+          <a href="#ajuda"><span class="material-symbols-outlined" aria-hidden="true">support_agent</span>Onde pedir ajuda</a>
+          <a href="#duvidas"><span class="material-symbols-outlined" aria-hidden="true">help</span>Dúvidas frequentes</a>
+        </nav>
+
+        <div class="info-note" role="note">
+          <span class="material-symbols-outlined" aria-hidden="true">info</span>
+          <p><strong>Importante:</strong> a faculdade não definiu um prazo fixo de confecção, e o valor da segunda via, a forma de pagamento e o formato da foto devem ser confirmados diretamente com a Central de Atendimento ao Aluno (CAA). Neste guia, tudo o que ainda precisa de confirmação aparece sinalizado.</p>
+        </div>
+
+        <div class="sector-grid">
+          <article class="sector-card">
+            <div class="sector-card-icon" aria-hidden="true"><span class="material-symbols-outlined">school</span></div>
+            <span class="card-kicker">Primeira emissão</span>
+            <h3 class="sector-card-title">Carteirinha de entrada</h3>
+            <p class="sector-card-text">A primeira via está ligada ao processo de ingresso e matrícula do calouro e é gratuita. Alguns alunos relataram que a carteirinha ficou pronta sem precisar solicitá-la depois, e que foram avisados pela portaria.</p>
+            <a href="#passo-a-passo" class="text-link">Ver passo a passo <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+          </article>
+          <article class="sector-card">
+            <div class="sector-card-icon" aria-hidden="true"><span class="material-symbols-outlined">autorenew</span></div>
+            <span class="card-kicker">Perda ou dano</span>
+            <h3 class="sector-card-title">Solicitar segunda via</h3>
+            <p class="sector-card-text">Em caso de perda ou dano, é preciso abrir um pedido específico: por requerimento no Portal do Aluno ou procurando a CAA. O valor cobrado e a forma de pagamento devem ser confirmados com o atendimento antes de solicitar.</p>
+            <a href="#duvidas" class="text-link">Ver dúvidas frequentes <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+          </article>
+          <article class="sector-card">
+            <div class="sector-card-icon" aria-hidden="true"><span class="material-symbols-outlined">photo_camera</span></div>
+            <span class="card-kicker">Preparação</span>
+            <h3 class="sector-card-title">Padrão da fotografia</h3>
+            <p class="sector-card-text">Foto 3x4, com fundo branco, sem boné e sem óculos, enviada por e-mail. A foto fora do padrão é o motivo mais comum de atraso ou recusa, então vale conferir tudo antes de enviar.</p>
+            <a href="#foto" class="text-link">Conferir padrão da foto <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+          </article>
+          <article class="sector-card">
+            <div class="sector-card-icon" aria-hidden="true"><span class="material-symbols-outlined">hourglass_top</span></div>
+            <span class="card-kicker">Prazos</span>
+            <h3 class="sector-card-title">Quanto tempo demora</h3>
+            <p class="sector-card-text">Não existe prazo definido para a confecção. Há relatos de espera de algumas semanas, por isso o ideal é pedir com antecedência, principalmente se você precisa da carteirinha para a meia-entrada ou para o acesso ao campus.</p>
+            <a href="#prazos" class="text-link">Ver valores e prazos <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+          </article>
+          <article class="sector-card">
+            <div class="sector-card-icon" aria-hidden="true"><span class="material-symbols-outlined">location_on</span></div>
+            <span class="card-kicker">Retirada</span>
+            <h3 class="sector-card-title">Onde buscar a carteirinha</h3>
+            <p class="sector-card-text">A retirada acontece na CAA e também pode ser feita pela portaria. Como o local pode variar, confirme com o atendimento onde a sua está disponível antes de se deslocar até o campus.</p>
+            <a href="#ajuda" class="text-link">Ver canais de ajuda <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+          </article>
+          <article class="sector-card">
+            <div class="sector-card-icon" aria-hidden="true"><span class="material-symbols-outlined">support_agent</span></div>
+            <span class="card-kicker">Suporte</span>
+            <h3 class="sector-card-title">Fale com a CAA</h3>
+            <p class="sector-card-text">A Central de Atendimento ao Aluno é o setor responsável por emissão, extravio e dúvidas sobre a carteirinha. O atendimento pode ser feito presencialmente, pelo WhatsApp <a class="inline-link" href="https://wa.me/553237297501" target="_blank" rel="noopener noreferrer">(32) 3729-7501</a> ou pelo e-mail <a class="inline-link" href="mailto:caa.mre@faminas.edu.br">caa.mre@faminas.edu.br</a>.</p>
+            <a href="#contato" class="text-link">Ver contato <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></a>
+          </article>
+        </div>
+
+        <section id="passo-a-passo" class="content-panel" aria-labelledby="process-heading">
+          <div class="panel-heading">
+            <span class="material-symbols-outlined" aria-hidden="true">route</span>
+            <div><span class="card-kicker">Como funciona</span><h3 id="process-heading">Passo a passo</h3></div>
+          </div>
+          <p class="panel-intro">O caminho muda conforme a sua situação. Escolha abaixo se você está aguardando a primeira carteirinha ou se precisa de uma segunda via por perda ou dano.</p>
+          <div class="steps-columns">
+            <div class="steps-column">
+              <h4 class="steps-column-title"><span class="material-symbols-outlined" aria-hidden="true">school</span>Primeira via (calouro)</h4>
+              <ol class="process-steps-list">
+                <li class="process-step-item"><span class="step-number">1</span><div class="step-content"><strong>Conclua a matrícula</strong><p>A confecção inicial está ligada ao fluxo de ingresso. Acompanhe as orientações recebidas na matrícula e passe os dados que forem solicitados.</p></div></li>
+                <li class="process-step-item"><span class="step-number">2</span><div class="step-content"><strong>Envie a foto no padrão</strong><p>Foto 3x4, fundo branco, sem óculos e sem boné, enviada por e-mail. Envie para o e-mail da CAA (<a class="inline-link" href="mailto:caa.mre@faminas.edu.br">caa.mre@faminas.edu.br</a>) e confirme o formato do arquivo.</p></div></li>
+                <li class="process-step-item"><span class="step-number">3</span><div class="step-content"><strong>Aguarde a confecção</strong><p>Não há prazo definido. Se passar muito tempo sem notícias, procure a CAA pelo WhatsApp ou presencialmente para consultar o andamento.</p></div></li>
+                <li class="process-step-item"><span class="step-number">4</span><div class="step-content"><strong>Retire a carteirinha</strong><p>A retirada é feita na CAA ou na portaria. Pergunte ao atendimento onde a sua está disponível antes de ir.</p></div></li>
+              </ol>
+            </div>
+            <div class="steps-column">
+              <h4 class="steps-column-title"><span class="material-symbols-outlined" aria-hidden="true">autorenew</span>Segunda via (perda ou dano)</h4>
+              <ol class="process-steps-list">
+                <li class="process-step-item"><span class="step-number">1</span><div class="step-content"><strong>Confirme que ela não foi encontrada</strong><p>Antes de pedir uma nova, vale perguntar na CAA se a carteirinha perdida foi entregue ou localizada, para evitar uma cobrança desnecessária.</p></div></li>
+                <li class="process-step-item"><span class="step-number">2</span><div class="step-content"><strong>Abra o pedido</strong><p>Faça o requerimento no Portal do Aluno (na área de requerimentos) ou procure a CAA. Se tiver dificuldade para achar o requerimento, peça ajuda ao atendimento.</p></div></li>
+                <li class="process-step-item"><span class="step-number">3</span><div class="step-content"><strong>Confirme valor e pagamento</strong><p>Pergunte à CAA o valor exato da segunda via e como o pagamento é feito, pois essa informação ainda não está padronizada em um canal público.</p></div></li>
+                <li class="process-step-item"><span class="step-number">4</span><div class="step-content"><strong>Envie a foto e aguarde</strong><p>Use uma foto dentro do padrão para evitar atraso. Depois, acompanhe o andamento com a CAA e retire a nova carteirinha no local informado.</p></div></li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section id="foto" class="content-panel photo-panel" aria-labelledby="photo-heading">
+          <div class="panel-heading">
+            <span class="material-symbols-outlined" aria-hidden="true">photo</span>
+            <div><span class="card-kicker">Antes de enviar</span><h3 id="photo-heading">Checklist da foto</h3></div>
+          </div>
+          <p class="panel-intro">A foto fora do padrão é o motivo mais frequente de problema nos pedidos. Dedique um minuto para conferir os itens abaixo antes de enviar.</p>
+          <div class="photo-columns">
+            <div>
+              <h4 class="steps-column-title"><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Como deve ser</h4>
+              <ul class="photo-checklist">
+                <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Foto no padrão 3x4</li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Fundo branco</li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Sem boné</li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Sem óculos</li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">check_circle</span>Enviada por e-mail para a CAA</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="steps-column-title"><span class="material-symbols-outlined" aria-hidden="true">cancel</span>O que evitar</h4>
+              <ul class="photo-checklist photo-avoid">
+                <li><span class="material-symbols-outlined" aria-hidden="true">cancel</span>Fundo colorido ou com objetos</li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">cancel</span>Boné, chapéu ou óculos</li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">cancel</span>Proporção diferente de 3x4</li>
+                <li><span class="material-symbols-outlined" aria-hidden="true">cancel</span>Enviar sem conferir o formato do arquivo</li>
+              </ul>
+            </div>
+          </div>
+          <p class="muted-note">O e-mail para envio é o da CAA (<a class="inline-link" href="mailto:caa.mre@faminas.edu.br">caa.mre@faminas.edu.br</a>). Ainda precisam de confirmação com a CAA: o formato do arquivo (por exemplo, JPG ou PNG) e se é possível trocar ou atualizar a foto de uma carteirinha já emitida. Essas dúvidas apareceram em mais de uma entrevista.</p>
+        </section>
+
+        <section id="prazos" class="quick-facts-block" aria-labelledby="facts-heading">
+          <div class="faq-heading-row"><div><span class="card-kicker">Resumo rápido</span><h3 id="facts-heading" class="block-title">Valores, prazos e regras em um olhar</h3></div></div>
+          <div class="quick-facts" role="list">
+            <article class="fact-card" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">payments</span><div><h3>Primeira via</h3><p>Gratuita para quem ingressa na faculdade.</p></div></article>
+            <article class="fact-card" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">receipt_long</span><div><h3>Segunda via</h3><p>Tem cobrança. O valor e a forma de pagamento devem ser confirmados com a CAA.</p></div></article>
+            <article class="fact-card" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">schedule</span><div><h3>Prazo de confecção</h3><p>Sem prazo definido. Há relatos de espera de semanas, então solicite com antecedência.</p></div></article>
+            <article class="fact-card" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">mail</span><div><h3>Envio da foto</h3><p>Por e-mail, para <a class="inline-link" href="mailto:caa.mre@faminas.edu.br">caa.mre@faminas.edu.br</a>, com foto 3x4, fundo branco, sem boné e sem óculos.</p></div></article>
+            <article class="fact-card" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">location_on</span><div><h3>Retirada</h3><p>Na CAA ou na portaria. Confirme o local antes de ir.</p></div></article>
+            <article class="fact-card" role="listitem"><span class="material-symbols-outlined" aria-hidden="true">smartphone</span><div><h3>Versão digital</h3><p>Não existe versão digital oficial. A carteirinha física é o único formato.</p></div></article>
+          </div>
+        </section>
+
+        <section id="ajuda" class="content-panel" aria-labelledby="help-heading">
+          <div class="panel-heading">
+            <span class="material-symbols-outlined" aria-hidden="true">support_agent</span>
+            <div><span class="card-kicker">Canais de atendimento</span><h3 id="help-heading">Onde pedir ajuda</h3></div>
+          </div>
+          <p class="panel-intro">Os alunos entrevistados citaram três caminhos principais. Use o que for mais prático para você.</p>
+          <div class="channels-grid">
+            <article class="channel-card">
+              <span class="material-symbols-outlined" aria-hidden="true">storefront</span>
+              <h4>CAA presencial</h4>
+              <p>Indicada para emissão, segunda via, valores, retirada e qualquer dúvida sobre o andamento. Os alunos relatam que o atendimento costuma explicar o passo a passo com clareza.</p>
+            </article>
+            <article class="channel-card">
+              <span class="material-symbols-outlined" aria-hidden="true">chat</span>
+              <h4>CAA pelo WhatsApp</h4>
+              <p>Boa opção para tirar dúvidas rápidas sem precisar ir ao campus, como o status do pedido, o valor ou o local de retirada. Número: <a class="inline-link" href="https://wa.me/553237297501" target="_blank" rel="noopener noreferrer">(32) 3729-7501</a>. Foi o canal mais elogiado nas entrevistas.</p>
+            </article>
+            <article class="channel-card">
+              <span class="material-symbols-outlined" aria-hidden="true">mail</span>
+              <h4>E-mail da CAA</h4>
+              <p>Use para enviar a foto da carteirinha e para dúvidas por escrito: <a class="inline-link" href="mailto:caa.mre@faminas.edu.br">caa.mre@faminas.edu.br</a>.</p>
+            </article>
+            <article class="channel-card">
+              <span class="material-symbols-outlined" aria-hidden="true">desktop_windows</span>
+              <h4>Portal do Aluno</h4>
+              <p>É por onde se abre o requerimento de segunda via. Como a área reúne muitos requerimentos, a carteirinha pode ser difícil de achar; se isso acontecer, peça orientação à CAA.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="entrevistas" class="content-panel insights-panel" aria-labelledby="insights-heading">
+          <div class="panel-heading">
+            <span class="material-symbols-outlined" aria-hidden="true">forum</span>
+            <div><span class="card-kicker">Voz dos estudantes</span><h3 id="insights-heading">O que os alunos mais queriam saber</h3></div>
+          </div>
+          <p class="panel-intro">Este guia nasceu das dúvidas reais de 12 estudantes entrevistados pelo Grupo 10, dos cursos de Medicina Veterinária, Análise e Desenvolvimento de Sistemas, Psicologia, Odontologia e Farmácia.</p>
+          <div class="insight-stats">
+            <div class="insight-stat"><strong>8 de 12</strong><span>mencionaram o prazo ou o tempo de espera como dúvida</span></div>
+            <div class="insight-stat"><strong>7 de 12</strong><span>citaram o valor da carteirinha como ponto a esclarecer</span></div>
+            <div class="insight-stat"><strong>CAA</strong><span>foi o canal de ajuda lembrado pela maioria dos entrevistados</span></div>
+          </div>
+          <ul class="insight-list">
+            <li><span class="material-symbols-outlined" aria-hidden="true">lightbulb</span><div><strong>Informação difícil de achar online.</strong> Vários alunos só descobriram o caminho conversando com a CAA ou porque o assunto foi comentado em sala. Por isso este guia reúne tudo em uma página.</div></li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">lightbulb</span><div><strong>Dúvida sobre a foto.</strong> Alunos queriam saber qual foto será usada, em que formato enviar e se é possível trocá-la.</div></li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">lightbulb</span><div><strong>Falta de previsão.</strong> Há quem queira saber com quanto tempo de antecedência pedir e quando a carteirinha vence ou precisa ser renovada.</div></li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">lightbulb</span><div><strong>Ideia de carteirinha digital.</strong> Um aluno sugeriu uma versão em aplicativo, semelhante à CNH digital. Hoje isso ainda não existe, mas fica registrado como sugestão de melhoria.</div></li>
+          </ul>
+        </section>
+
+        <section id="confirmar" class="content-panel pending-panel" aria-labelledby="pending-heading">
+          <div class="panel-heading">
+            <span class="material-symbols-outlined" aria-hidden="true">pending_actions</span>
+            <div><span class="card-kicker">Transparência</span><h3 id="pending-heading">O que ainda precisa ser confirmado com a CAA</h3></div>
+          </div>
+          <p class="panel-intro">Para não passar informação errada, listamos os pontos que não foram confirmados no levantamento. Pergunte à CAA antes de tomar qualquer decisão com base neles.</p>
+          <ul class="pending-list">
+            <li><span class="material-symbols-outlined" aria-hidden="true">help</span>Valor exato da segunda via e forma de pagamento</li>
+                        <li><span class="material-symbols-outlined" aria-hidden="true">help</span>Formato aceito para a foto (JPG, PNG ou outro)</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">help</span>Se é possível trocar ou atualizar a foto da carteirinha</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">help</span>Prazo médio de confecção e retirada</li>
+            <li><span class="material-symbols-outlined" aria-hidden="true">help</span>Validade da carteirinha e quando renovar</li>
+          </ul>
+        </section>
+
+        <section id="duvidas" class="faq-section" aria-labelledby="faq-heading">
+          <div class="faq-heading-row"><div><span class="card-kicker">Respostas rápidas</span><h3 id="faq-heading">Dúvidas frequentes</h3></div><label class="faq-search-wrap" for="faq-search"><span class="material-symbols-outlined" aria-hidden="true">search</span><input id="faq-search" type="search" placeholder="Buscar uma dúvida..." autocomplete="off" /></label></div>
+          <div class="faq-accordion" id="faq-list">
+            <details class="faq-item"><summary class="faq-summary"><span>A primeira via da carteirinha é paga?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">Não. A primeira via é gratuita e está ligada ao processo de ingresso e matrícula do calouro.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Quais são os contatos da CAA?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">WhatsApp: <a class="inline-link" href="https://wa.me/553237297501" target="_blank" rel="noopener noreferrer">(32) 3729-7501</a>. E-mail: <a class="inline-link" href="mailto:caa.mre@faminas.edu.br">caa.mre@faminas.edu.br</a>. A CAA também atende presencialmente no campus.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Preciso solicitar a primeira via?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">A confecção inicial faz parte do fluxo de matrícula, e alguns alunos relataram que ela é solicitada automaticamente. Outros precisaram enviar a foto por e-mail. Por isso, siga as orientações da CAA no ingresso e, se tiver dúvida, pergunte a eles.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Quanto custa a segunda via?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">A segunda via tem custo, mas o valor exato e a forma de pagamento devem ser confirmados diretamente com a CAA antes de solicitar. Essa foi uma das dúvidas mais citadas pelos alunos.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Quanto tempo demora para ficar pronta?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">Não existe prazo definido para a confecção. Há relatos de espera de semanas, então peça com antecedência. Para consultar o andamento do seu caso, procure a CAA presencialmente ou pelo WhatsApp.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Onde retiro a carteirinha?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">A retirada pode ser feita na CAA ou na portaria. Há alunos que foram avisados pela própria portaria de que a carteirinha estava pronta. Confirme com o atendimento qual é o local da sua antes de ir.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Existe carteirinha digital?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">Não. Atualmente não há versão digital oficial, nem aplicativo ou exibição pelo Portal do Aluno. Enquanto a física não fica pronta, não há uma alternativa digital oficial, então vale pedir com antecedência.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Como peço uma segunda via por perda ou dano?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">Abra um requerimento específico no Portal do Aluno ou procure a CAA, que orienta o que fazer. Antes disso, vale perguntar se a carteirinha perdida não foi encontrada, para evitar pagar por uma nova sem necessidade.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Qual é o padrão da foto?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">A foto deve ser 3x4, com fundo branco, sem óculos e sem boné. Foto fora desse padrão é o motivo mais frequente de problemas nos pedidos.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Como e para onde envio a foto?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">O envio é feito por e-mail, para o endereço da CAA: <a class="inline-link" href="mailto:caa.mre@faminas.edu.br">caa.mre@faminas.edu.br</a>. O formato do arquivo (JPG, PNG ou outro) ainda deve ser confirmado com a CAA, pois já gerou dúvidas entre os alunos.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Posso trocar ou atualizar a foto?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">Essa dúvida apareceu em mais de uma entrevista, mas ainda não foi confirmada pela instituição. Consulte a CAA antes de enviar uma nova foto.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Não encontro o pedido da carteirinha no Portal do Aluno. E agora?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">O requerimento da carteirinha fica na área de requerimentos, que reúne vários outros pedidos, o que dificulta a busca. Se não encontrar, fale com a CAA pelo WhatsApp ou presencialmente, que eles indicam o caminho.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Minha carteirinha está demorando. O que fazer?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">Como não há prazo fixo, o melhor caminho é entrar em contato com a CAA para consultar o andamento. Também confira se a foto enviada estava dentro do padrão, pois esse é o principal motivo de atraso.</div></details>
+            <details class="faq-item"><summary class="faq-summary"><span>Quando preciso renovar a carteirinha?</span><span class="material-symbols-outlined" aria-hidden="true">expand_more</span></summary><div class="faq-content">A validade e a data de renovação não foram confirmadas no levantamento. Alguns alunos gostariam de ter essa previsão, então consulte a CAA para saber quando a sua vence.</div></details>
+          </div>
+          <p id="faq-empty" class="faq-empty" hidden>Nenhuma dúvida encontrada. Tente buscar por “foto”, “valor”, “prazo” ou “segunda via”.</p>
+        </section>
+
+        <section id="contato" class="contact-banner" aria-labelledby="contact-heading">
+          <div class="contact-banner-meta"><span class="contact-eyebrow">Precisa confirmar uma informação?</span><h3 id="contact-heading">Fale com a Central de Atendimento ao Aluno (CAA)</h3><p>A CAA atende presencialmente, pelo WhatsApp e por e-mail e é a responsável por emissão, extravio, valores e dúvidas sobre a carteirinha. Procure o atendimento para confirmar os pontos pendentes deste guia, consultar o andamento do seu pedido ou saber onde retirar a sua.</p></div>
+          <div class="contact-banner-actions"><a href="https://wa.me/553237297501" target="_blank" rel="noopener noreferrer" class="btn btn-primary-highlight"><span class="material-symbols-outlined" aria-hidden="true">chat</span><span>WhatsApp (32) 3729-7501</span></a><a href="mailto:caa.mre@faminas.edu.br" class="btn btn-contact-outline"><span class="material-symbols-outlined" aria-hidden="true">mail</span><span>caa.mre@faminas.edu.br</span></a><a href="https://infohub-faminas.vercel.app" class="btn btn-contact-outline" class="btn btn-primary-highlight"><span class="material-symbols-outlined" aria-hidden="true">home</span><span>Voltar ao InfoHub</span></a></div>
+        </section>
+        <p class="source-note">Conteúdo elaborado pelo Grupo 10 com base em entrevistas com estudantes e informações complementares registradas no levantamento. Informações operacionais podem mudar; confirme os detalhes com a CAA.</p>
+
+        <!-- ====================================================================
+             CRÉDITOS DA EQUIPE (última área editável da página)
+             ==================================================================== -->
+        <section id="autores" class="authors-panel" aria-labelledby="authors-heading">
+          <div class="authors-heading">
+            <span class="material-symbols-outlined" aria-hidden="true">groups</span>
+            <div>
+              <span class="card-kicker">Equipe responsável</span>
+              <h3 id="authors-heading">Autores • Grupo 10</h3>
+            </div>
+          </div>
+          <ul class="authors-list">
+            <li><details class="author-item"><summary class="author-summary"><span class="author-avatar" aria-hidden="true">JG</span><span class="author-name">João Gabriel Cunha Prado</span><span class="material-symbols-outlined author-chevron" aria-hidden="true">expand_more</span></summary><a class="author-github" href="https://github.com/joaogabrielDig" target="_blank" rel="noopener noreferrer" aria-label="GitHub de João Gabriel Cunha Prado em nova janela"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><span>github.com/joaogabrielDig</span><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span></a></details></li>
+            <li><details class="author-item"><summary class="author-summary"><span class="author-avatar" aria-hidden="true">JV</span><span class="author-name">João Vitor Candido da Silva</span><span class="material-symbols-outlined author-chevron" aria-hidden="true">expand_more</span></summary><a class="author-github" href="https://github.com/joaovt2007" target="_blank" rel="noopener noreferrer" aria-label="GitHub de João Vitor Candido da Silva em nova janela"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><span>github.com/joaovt2007</span><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span></a></details></li>
+            <li><details class="author-item"><summary class="author-summary"><span class="author-avatar" aria-hidden="true">KB</span><span class="author-name">Kamily Bandeira da Silva</span><span class="material-symbols-outlined author-chevron" aria-hidden="true">expand_more</span></summary><a class="author-github" href="https://github.com/kamilybandeira3-design" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Kamily Bandeira da Silva em nova janela"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><span>github.com/kamilybandeira3-design</span><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span></a></details></li>
+            <li><details class="author-item"><summary class="author-summary"><span class="author-avatar" aria-hidden="true">MB</span><span class="author-name">Monalisa de Souza Berriel</span><span class="material-symbols-outlined author-chevron" aria-hidden="true">expand_more</span></summary><a class="author-github" href="https://github.com/Berrielx" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Monalisa de Souza Berriel em nova janela"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><span>github.com/Berrielx</span><span class="material-symbols-outlined" aria-hidden="true">open_in_new</span></a></details></li>
+          </ul>
+          <p class="authors-note">Clique no nome de cada autor para ver o perfil no GitHub. Acadêmicos de Análise e Desenvolvimento de Sistemas, disciplina de Engenharia de Software, FAMINAS.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================================================================
+       RODAPÉ INSTITUCIONAL OFICIAL (RIGOROSAMENTE INALTERADO)
+       Preserva a identidade, créditos acadêmicos de ADS e modais legais.
+       ==================================================================== -->
+  <footer id="main-footer" class="site-footer">
+    <div class="footer-main">
+      <div class="footer-info">
+        <img src="./assets/images/logo-faminas.png" alt="FAMINAS" class="footer-logo" />
+        <p class="footer-text">
+          O <strong>InfoHub FAMINAS</strong> é uma iniciativa extensionista curricularizada desenvolvida pelos
+          acadêmicos do curso de <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> na disciplina de
+          <strong>Engenharia de Software</strong>, com foco no autoatendimento, clareza processual e usabilidade para
+          toda a comunidade universitária.
+        </p>
+
+        <div class="footer-course-highlight">
+          <a 
+            href="https://www.unifaminas.edu.br/cursos/analise-e-desenvolvimento-de-sistemas" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="footer-course-card"
+            id="link-curso-ads"
+            aria-label="Conheça o curso de Análise e Desenvolvimento de Sistemas na UNIFAMINAS em nova janela"
+          >
+            <div class="footer-course-icon" aria-hidden="true">
+              <span class="material-symbols-outlined">school</span>
+            </div>
+            <div class="footer-course-meta">
+              <span class="footer-course-label">Curso de Graduação</span>
+              <strong class="footer-course-title">Análise e Desenvolvimento de Sistemas</strong>
+            </div>
+            <span class="material-symbols-outlined footer-course-arrow" aria-hidden="true">open_in_new</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-group">
+        <span class="footer-links-title">Informações Institucionais</span>
+        <nav class="footer-nav" aria-label="Links institucionais e termos">
+          <button type="button" class="footer-link-btn" id="btn-modal-sobre" data-modal="sobre">
+            <span class="material-symbols-outlined" aria-hidden="true">info</span>
+            Sobre o Projeto
+          </button>
+          <button type="button" class="footer-link-btn" id="btn-modal-termos" data-modal="termos">
+            <span class="material-symbols-outlined" aria-hidden="true">gavel</span>
+            Termos de Uso
+          </button>
+          <button type="button" class="footer-link-btn" id="btn-modal-privacidade" data-modal="privacidade">
+            <span class="material-symbols-outlined" aria-hidden="true">security</span>
+            Política de Privacidade
+          </button>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 FAMINAS — Faculdade de Minas. Todos os direitos reservados.</p>
+      <p>Desenvolvido com excelência técnica e padrões Web Standards.</p>
+    </div>
+  </footer>
+
+  <!-- Contêiner de Modais Sobrepostos -->
+  <div id="modals-root" aria-live="polite"></div>
+
+  <!-- Script de Inicialização da Aplicação -->
+  <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
